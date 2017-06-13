@@ -13,14 +13,16 @@
     "theatre": {
       "type": "number",
       "required": true
-    },
-    "movie_id": {
-      "type": "number",
-      "required": true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "movie": {
+      "type": "belongsTo",
+      "model": "movie",
+      "foreignKey": "movie_id"
+    }
+  },
   "acls": [],
   "methods": {}
 }
