@@ -21,6 +21,11 @@
       "type": "belongsTo",
       "model": "movie",
       "foreignKey": "movie_id"
+    },
+    "bookings": {
+      "type": "hasMany",
+      "model": "booking",
+      "foreignKey": "showtime_id"
     }
   },
   "acls": [],

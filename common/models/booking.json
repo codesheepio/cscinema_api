@@ -23,7 +23,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "showtime": {
+      "type": "belongsTo",
+      "model": "showtime",
+      "foreignKey": "showtime_id"
+    }
+  },
   "acls": [],
   "methods": {}
 }
