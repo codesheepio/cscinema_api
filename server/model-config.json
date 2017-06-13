@@ -16,5 +16,9 @@
   "booking": {
     "dataSource": "db",
     "public": true
+  },
+  "movie": {
+    "dataSource": "db",
+    "public": true
   }
 }

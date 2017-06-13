@@ -1,23 +1,16 @@
 {
-  "name": "booking",
-  "plural": "bookings",
+  "name": "movie",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "seats": {
-      "type": [
-        "string"
-      ],
-      "required": true
-    },
-    "email": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "code": {
+    "description": {
       "type": "string",
       "required": true
     }
