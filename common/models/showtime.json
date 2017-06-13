@@ -1,0 +1,26 @@
+{
+  "name": "showtime",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "showtime": {
+      "type": "string",
+      "required": true
+    },
+    "theatre": {
+      "type": "number",
+      "required": true
+    },
+    "movie_id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

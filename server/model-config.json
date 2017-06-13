@@ -20,5 +20,9 @@
   "movie": {
     "dataSource": "db",
     "public": true
+  },
+  "showtime": {
+    "dataSource": "db",
+    "public": true
   }
 }
