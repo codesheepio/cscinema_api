@@ -16,7 +16,7 @@ module.exports = function(Booking) {
   Booking.on('attached', function() {
     Booking.findById = function(id, filter, cb) {
       var newFilter = filter || {}
-      newFilter.code = id
+      newFilter.where = { code: id }
       return Booking.find.call(this, newFilter, cb)
     }
   })
