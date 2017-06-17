@@ -26,6 +26,11 @@
       "type": "hasMany",
       "model": "booking",
       "foreignKey": "showtime_id"
+    },
+    "bookedSeats": {
+      "type": "hasMany",
+      "model": "bookedSeat",
+      "foreignKey": "showtime_id"
     }
   },
   "acls": [],

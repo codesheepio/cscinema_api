@@ -7,7 +7,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "start": "node .",
+    "start": "babel-node .",
     "posttest": "npm run lint && nsp check",
     "prettier": "zsh prettier.sh"
   },
@@ -22,6 +22,10 @@
     "strong-error-handler": "^2.0.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-stage-0": "^6.24.1",
     "eslint": "^3.17.1",
     "eslint-config-loopback": "^8.0.0",
     "eslint-plugin-prettier": "^2.1.1",

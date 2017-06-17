@@ -1,7 +1,7 @@
 module.exports = function(app) {
   var ds = app.dataSources.db
   ds.automigrate('Movie', function(err) {
-    Movie = app.models.Movie
+    var Movie = app.models.Movie
     Movie.create([
       {
         title: 'Ghost in the mirror',
@@ -14,7 +14,7 @@ module.exports = function(app) {
     ])
   })
   ds.automigrate('Showtime', function(err) {
-    Showtime = app.models.Showtime
+    var Showtime = app.models.Showtime
     Showtime.create([
       {
         showtime: '1330',
@@ -39,20 +39,20 @@ module.exports = function(app) {
     ])
   })
   ds.automigrate('Booking', function(err) {
-    Booking = app.models.Booking
-    Booking.create(
+    var Booking = app.models.Booking
+    Booking.create([
       {
         showtime_id: 1,
-        code: 'A31C',
+        code: 'A31C23',
         seats: ['A21', 'A22'],
         email: 'topscores@gmail.com',
       },
       {
         showtime_id: 1,
-        code: 'AXXC',
+        code: 'AXXC11',
         seats: ['B21', 'J3'],
         email: 'ake@gmail.com',
-      }
-    )
+      },
+    ])
   })
 }
